@@ -55,7 +55,7 @@ See `requirements.txt`.
 
 ## 👨‍💻 Author
 
-Your Name – [your-email@example.com](mailto:your-email@example.com)
+Your Name – [rwaghade25@gmail.com](mailto:your-email@example.com)
 
 ---
 
