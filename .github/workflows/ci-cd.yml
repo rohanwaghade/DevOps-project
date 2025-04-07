@@ -32,7 +32,8 @@ jobs:
         jupyter nbconvert --to notebook --execute CropProductionProject_\(3\).ipynb --output executed_notebook.ipynb
 
     - name: 🐳 Log in to DockerHub
-      run: echo "${ secrets.DOCKER_PASSWORD }" | docker login -u "${ secrets.DOCKER_USERNAME }" --password-stdin
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
 
     - name: 🔧 Build Docker image
       run: docker build -t rohanwaghade/crop-production:latest .
